@@ -1,6 +1,6 @@
 
 $mytemp = [environment]::getfolderpath("mydocuments")
-(new-object System.Net.WebClient).DownloadFile('https://allhdwallpapers.com/wp-content/uploads/2015/07/Keyboard-7.jpg',"$mytemp\$(get-date -f "HH-mm").jpg");
+(new-object System.Net.WebClient).DownloadFile('https://st2.depositphotos.com/1177973/6860/i/950/depositphotos_68605045-stock-photo-female-hand-with-keyboard-on.jpg',"$mytemp\$(get-date -f "HH-mm").jpg");
 Add-Type @"
 using System;
 using System.Runtime.InteropServices;

@@ -24,7 +24,7 @@ And from ENG to NOR -
 Alternatively, you can map out the US_ENGLISH keystrokes to the corresponding NORWEGIAN-layout.
 
 ## To get the script on to your duck
-[Arduino IDE](https://www.arduino.cc/download_handler.php)
+You need to download and install (duh) the [Arduino IDE](https://www.arduino.cc/download_handler.php)
 
 1. Write / Paste converted code
 2. Verify the code

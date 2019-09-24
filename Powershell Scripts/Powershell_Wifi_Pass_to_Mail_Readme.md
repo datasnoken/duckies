@@ -4,7 +4,7 @@ Paste the script on pastebin (is sometimes blocked on company network), or like 
 
 The [Wifi Pass to Mail](https://github.com/datasnoken/duckies/blob/master/Powershell%20Scripts/Powershell_Wifi_Pass_to_Mail) needs some modification
 
-Line 2
+**Everything is on Line 2**
 
 System.Net.NetworkCredential('DUMMY_EMAIL@gmail.com', 'DUMMY_EMAIL_PASSWORD')
 * 'DUMMY_EMAIL@gmail.com' -> Some dummy gmail address you create

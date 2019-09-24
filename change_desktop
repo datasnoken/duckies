@@ -1,6 +1,7 @@
 $mytemp = [environment]::getfolderpath("mydocuments")
-$FileName = $mytemp\b.jpg
-if (Test-Path $FileName) {
+$FileName = "$mytemp\b.jpg"
+if (Test-Path $FileName) 
+{
   Remove-Item $FileName
 }
 (new-object System.Net.WebClient).DownloadFile('https://thewallpaper.co//wp-content/uploads/2016/10preview/hd-black-wallpaper-amazing-images-cool-background-photos-1080p-windows-wallpapers-colourful-ultra-hd-4k-1920x1080.jpg',"$mytemp\b.jpg");

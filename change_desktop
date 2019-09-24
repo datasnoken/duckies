@@ -1,4 +1,3 @@
-
 $mytemp = [environment]::getfolderpath("mydocuments")
 (new-object System.Net.WebClient).DownloadFile('https://www.tokkoro.com/picsup/5541692-keyboard-wallpapers.jpg',"$mytemp\b.jpg");
 Add-Type @"
@@ -43,4 +42,3 @@ public class Setter {
 }
 "@
 [Wallpaper.Setter]::SetWallpaper("$mytemp\b.jpg" , 2 )
-del $mytemp\b.jpg

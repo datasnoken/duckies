@@ -1,6 +1,6 @@
 
 $mytemp = [environment]::getfolderpath("mydocuments")
-(new-object System.Net.WebClient).DownloadFile('https://allhdwallpapers.com/wp-content/uploads/2015/07/Keyboard-7.jpg',"$mytemp\$(get-date -f yyyy-MM-dd HH:mm).jpg");
+(new-object System.Net.WebClient).DownloadFile('https://allhdwallpapers.com/wp-content/uploads/2015/07/Keyboard-7.jpg',"$mytemp\$(get-date -f yyyy-MM-dd HH-mm).jpg");
 Add-Type @"
 using System;
 using System.Runtime.InteropServices;
@@ -42,4 +42,4 @@ public class Setter {
     }
 }
 "@
-[Wallpaper.Setter]::SetWallpaper("$mytemp\$(get-date -f yyyy-MM-dd HH:mm).jpg" , 2 )
+[Wallpaper.Setter]::SetWallpaper("$mytemp\$(get-date -f yyyy-MM-dd HH-mm).jpg" , 2 )

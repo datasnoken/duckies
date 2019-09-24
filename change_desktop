@@ -1,5 +1,5 @@
 $mytemp = [environment]::getfolderpath("mydocuments")
-$FileName = "$mytemp\b.jpg"
+$FileName = $mytemp\b.jpg
 if (Test-Path $FileName) {
   Remove-Item $FileName
 }

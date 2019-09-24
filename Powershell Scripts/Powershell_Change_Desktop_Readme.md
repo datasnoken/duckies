@@ -6,7 +6,8 @@ The [Change Desktop](https://github.com/datasnoken/duckies/blob/master/Powershel
 **CHANGE LINE 2 TO THE PICTURE YOU WANT AS THE NEW BACKGROUND**
 
 
-View the script as 'raw' and paste the link in line 30 of the arduino_run_script_from_web script, where it says "YOUR_SCRIPT_HOSTED_ON_SOME_SITE_AS_RAW"
+View the script as 'raw' and paste the link in line 30 of the [arduino_run_script_from_web](https://github.com/datasnoken/duckies/blob/master/Arduino%20Payloads/arduino_run_script_from_web.txt) script, where it says "YOUR_SCRIPT_HOSTED_ON_SOME_SITE_AS_RAW" and compile it to your Ducky
+
 
 ???
 profit

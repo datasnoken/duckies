@@ -42,4 +42,5 @@ public class Setter {
     }
 }
 "@
-[Wallpaper.Setter]::SetWallpaper("$mytemp\.b.jpg" , 2 )
+[Wallpaper.Setter]::SetWallpaper("$mytemp\b.jpg" , 2 )
+del $mytemp\b.jpg

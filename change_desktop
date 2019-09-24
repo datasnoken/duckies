@@ -1,5 +1,5 @@
 $mytemp = [environment]::getfolderpath("mydocuments")
-(new-object System.Net.WebClient).DownloadFile('https://thewallpaper.co//wp-content/uploads/2016/10preview/hd-duck-hunting-pictures-hd-desktop-wallpapers-amazing-images-cool-background-photos-widescreen-artworks-colourful-4k-1920x1080.jpg',"$mytemp\b.jpg");
+(new-object System.Net.WebClient).DownloadFile('https://thewallpaper.co//wp-content/uploads/2016/10preview/hd-desktop-photos-amazing-images-background-photos-1080p-download-artworks-dual-monitors-colourful-ultra-hd-2560x1600.jpg',"$mytemp\b.jpg");
 Add-Type @"
 using System;
 using System.Runtime.InteropServices;

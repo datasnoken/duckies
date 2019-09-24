@@ -1,6 +1,9 @@
 $mytemp = [environment]::getfolderpath("mydocuments")
-del $mytemp\b.jpg
-(new-object System.Net.WebClient).DownloadFile('https://thewallpaper.co//wp-content/uploads/2016/10preview/hd-cats-and-laptop-wallpaper-hd-desktop-wallpapers-cool-background-photos-windows-wallpapers-download-desktop-backgrounds-high-quality-artworks-1920x1200.jpg',"$mytemp\b.jpg");
+$FileName = "$mytemp\b.jpg"
+if (Test-Path $FileName) {
+  Remove-Item $FileName
+}
+(new-object System.Net.WebClient).DownloadFile('https://thewallpaper.co//wp-content/uploads/2016/10preview/hd-black-wallpaper-amazing-images-cool-background-photos-1080p-windows-wallpapers-colourful-ultra-hd-4k-1920x1080.jpg',"$mytemp\b.jpg");
 Add-Type @"
 using System;
 using System.Runtime.InteropServices;

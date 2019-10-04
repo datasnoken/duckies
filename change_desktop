@@ -1,5 +1,5 @@
 $mytemp = [environment]::getfolderpath("mydocuments")
-$source = "https://thewallpaper.co//wp-content/uploads/2016/10preview/hd-cats-and-laptop-wallpaper-hd-desktop-wallpapers-cool-background-photos-windows-wallpapers-download-desktop-backgrounds-high-quality-artworks-1920x1200.jpg"
+$source = "https://erowall.com/wallpapers/original/26806.jpg"
 $filename = "$mytemp\$(get-date -f yyyy-MM-dd-HH-mm).jpg"
 (new-object System.Net.WebClient).DownloadFile($source,$filename);
 Add-Type @"

